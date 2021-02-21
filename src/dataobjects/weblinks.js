@@ -20,7 +20,7 @@ const weblinks = [{
     },
     {
         desc: "Awesome Font & icons",
-        link: " https://fontawesome.com/how-to-use/on-the-web/using-with/react"
+        link: "https://fontawesome.com/icons?d=gallery"
     }
 ];
 

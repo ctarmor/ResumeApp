@@ -3,7 +3,7 @@ import { Route, Router } from 'react-router';
 import { Home } from '../components/Home';
 import { createBrowserHistory } from "history";
 import { Projects } from '../components/Projects';
-import { Technology } from '../components/Technology';
+import { Skills } from '../components/Skills';
 import { AnimatedSwitch } from 'react-router-transition';
 import { TheFooter } from '../components/TheFooter';
 import { TheNavbar } from '../components/TheNavbar';
@@ -38,7 +38,7 @@ export function TheRouter(props: any) {
                         <Route exact path={'/'} component={Home} />
                         <Route path={'/home'} component={Home} />
                         <Route path={'/projects'} component={Projects} />
-                        <Route path={'/technology'} component={Technology} />
+                        <Route path={'/skills'} component={Skills} />
                         <Route path={'/packages'} component={WebPackages} />
                         
                     </AnimatedSwitch>
