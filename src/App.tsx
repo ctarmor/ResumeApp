@@ -2,19 +2,25 @@ import React from 'react';
 import './App.css';
 import Navbar from 'react-bootstrap/esm/Navbar';
 import Nav from 'react-bootstrap/esm/Nav';
-import NavDropdown from 'react-bootstrap/esm/NavDropdown';
+import { Col, Container } from 'react-bootstrap';
+import { TheRouter } from './core/TheRouter';
+import Row from 'react-bootstrap/esm/Row';
+import { TheNavbar } from './components/TheNavbar';
 
 function App() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">Carlos Resume</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Overview</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <Container fluid>
+      <Row>
+        <Col>
+          <TheNavbar />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <TheRouter />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
