@@ -1,10 +1,12 @@
-import React from 'react';
 
-export class Home extends React.Component {
-    
-    render() {
-        return (
-            <div>Overview</div>
-        );
-    }
+
+//
+// Functional Definition
+// https://reactjs.org/docs/components-and-props.html
+//
+
+export function Home(props: any) {
+    return <div>Overview</div>;
 }
+
+

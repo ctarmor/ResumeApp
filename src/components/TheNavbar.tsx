@@ -2,10 +2,12 @@ import React from 'react';
 import Nav from 'react-bootstrap/esm/Nav';
 import Navbar from 'react-bootstrap/esm/Navbar';
 
+// 
+// https://react-bootstrap.github.io/components/navbar/
+// 
+
+
 export class TheNavbar extends React.Component {
-    constructor(props: any) {
-        super(props)
-    }
 
     render() {
         return (
