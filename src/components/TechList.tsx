@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSortUp, faSortDown } from '@fortawesome/free-solid-svg-icons';
 
 //
-// Render a table for skillset
+// Render a manually manage table for its props skillset collection
 //
 export function TechList(props: [SkillsNm.ISkillsType]) {
 

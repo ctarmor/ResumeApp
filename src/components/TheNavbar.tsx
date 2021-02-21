@@ -18,7 +18,7 @@ export class TheNavbar extends React.Component {
                     <Nav className='mr-auto'>
                         <Nav.Link href='/home'>Overview</Nav.Link>
                         <Nav.Link href='/projects'>Projects</Nav.Link>
-                        <Nav.Link href='/technology'>Technology</Nav.Link>
+                        <Nav.Link href='/skills'>Skills</Nav.Link>
                         <Nav.Link href='/packages'>React Packages</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
