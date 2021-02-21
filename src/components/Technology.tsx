@@ -6,8 +6,6 @@ export class Technology extends React.Component {
 
     render() {
 
-        //const groups = techsobjects.groupby();
-
         return (
             <div>
                 <div className='thepheader'>Technology</div>

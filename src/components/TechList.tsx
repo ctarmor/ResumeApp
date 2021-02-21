@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Table } from 'react-bootstrap';
-import { skillOrderByLastUsed, skillOrderByName, skillOrderBySince } from '../dataobjects/SkillsData';
-
+import { Link } from 'react-router-dom';
+import { skillOrderByArea, skillOrderByLastUsed, skillOrderByName, skillOrderBySince } from '../dataobjects/SkillsData';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSortUp, faSortDown } from '@fortawesome/free-solid-svg-icons';
 
 //
 // Render a table for skillset
@@ -9,20 +11,19 @@ import { skillOrderByLastUsed, skillOrderByName, skillOrderBySince } from '../da
 export function TechList(props: [SkillsNm.ISkillsType]) {
 
     // Set functional state hooks
-    const [orderAsc] = useState(false);
-    const [orderBy] = useState(skillOrderByName);
+    const [op, setOp] = useState({ orderBy: skillOrderByName, orderAsc: true });
     const nowYr = new Date().getFullYear();
 
     // Manage dynamic sorting in manual table
     const orderSelectorNumberFn = (lf: SkillsNm.ISkillsType, rg: SkillsNm.ISkillsType) => {
-        const l = lf[orderBy] ? lf[orderBy] : 0;
-        const r = rg[orderBy] ? rg[orderBy] : 0;
+        const l = lf[op.orderBy] ? lf[op.orderBy] : 0;
+        const r = rg[op.orderBy] ? rg[op.orderBy] : 0;
 
-        return orderAsc ? l - r : r - l;
+        return op.orderAsc ? l - r : r - l;
     }
     const orderSelectorStringFn = (lf: SkillsNm.ISkillsType, rg: SkillsNm.ISkillsType) => {
-        const l: string = orderAsc ? lf[orderBy] : rg[orderBy];
-        const r: string = orderAsc ? rg[orderBy] : lf[orderBy];
+        const l: string = op.orderAsc ? lf[op.orderBy] : rg[op.orderBy];
+        const r: string = op.orderAsc ? rg[op.orderBy] : lf[op.orderBy];
 
         if (l < r) {
             return -1;
@@ -33,7 +34,7 @@ export function TechList(props: [SkillsNm.ISkillsType]) {
         return 0;
     }
     const orderSelectorFn = (lf: SkillsNm.ISkillsType, rg: SkillsNm.ISkillsType) => {
-        const type = typeof (lf[orderBy]);
+        const type = typeof (lf[op.orderBy]);
         return type === 'string' ? orderSelectorStringFn(lf, rg) : orderSelectorNumberFn(lf, rg);
     }
 
@@ -52,12 +53,33 @@ export function TechList(props: [SkillsNm.ISkillsType]) {
     // Finally sort
     skills.sort(orderSelectorFn);
 
+
+    // Re-sort
+    const onSort = (orderBy: string) => {
+        setOp({ orderBy: orderBy, orderAsc: !op.orderAsc });
+    }
+
+    // Render headaer based on sort criteria
+    const buildTh = (skillOrderBy: string, colname: string) => {
+        return <div>
+            <Link onClick={() => onSort(skillOrderBy)}>{colname}</Link>&nbsp;
+            {
+                op.orderBy === skillOrderBy ? op.orderAsc ? <FontAwesomeIcon icon={faSortUp} /> : <FontAwesomeIcon icon={faSortDown} /> : undefined
+            }
+
+        </div>;
+    }
+
+    //
+    // Render
+    //
     return <Table striped bordered hover size="sm">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Working Since</th>
-                <th>Last Used</th>
+                <th>{buildTh(skillOrderByName, 'Name')}</th>
+                <th>{buildTh(skillOrderBySince, 'Working Since')}</th>
+                <th>{buildTh(skillOrderByLastUsed, 'Last Used')}</th>
+                <th>{buildTh(skillOrderByArea, 'Area')}</th>
             </tr>
         </thead>
         <tbody>
@@ -65,6 +87,10 @@ export function TechList(props: [SkillsNm.ISkillsType]) {
         </tbody>
     </Table>;
 }
+
+//
+//
+
 
 //
 // Render a single row
@@ -76,6 +102,7 @@ function row(props: SkillsNm.ISkillsType) {
         {
             props.lastused ? <td>{props.lastused} ({props.lastusedyears} yrs)</td> : <td />
         }
+        <td>{props.type}</td>
     </tr>;
 }
 

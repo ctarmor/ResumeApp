@@ -5,7 +5,8 @@ const typeDatabase = 'Database';
 
 const skillOrderByName: string = 'name';
 const skillOrderBySince: string = 'sinceyr';
-const skillOrderByLastUsed : string = 'lastused';
+const skillOrderByLastUsed: string = 'lastused';
+const skillOrderByArea: string = 'type';
 
 const SkillsData: [SkillsNm.ISkillsType] = [{
         name: "VC++",
@@ -78,5 +79,6 @@ module.exports = {
     skillOrderBySince,
     skillOrderByLastUsed,
     skillOrderByName,
+    skillOrderByArea,
 }
 
