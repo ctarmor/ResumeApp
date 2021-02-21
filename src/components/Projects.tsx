@@ -6,7 +6,7 @@ export class Projects extends React.Component {
 
     render() {
         return (
-            <Container>
+            <Container fluid>
                 <Row>
                     <Col>
                         Projects

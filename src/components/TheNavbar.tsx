@@ -11,8 +11,8 @@ export class TheNavbar extends React.Component {
 
     render() {
         return (
-            <Navbar bg='light' expand='sm'>
-                <Navbar.Brand href='#home'>Carlos Resume</Navbar.Brand>
+            <Navbar bg='light' expand='lg'>
+                <Navbar.Brand href='/'>Carlos Resume</Navbar.Brand>
                 <Navbar.Toggle aria-controls='basic-navbar-nav' />
                 <Navbar.Collapse id='basic-navbar-nav'>
                     <Nav className='mr-auto'>

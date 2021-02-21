@@ -10,7 +10,7 @@ import { TheRouter } from './core/TheRouter';
 
 function App() {
   return (
-          <TheRouter />
+    <TheRouter />
   );
 }
 
