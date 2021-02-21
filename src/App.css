@@ -37,10 +37,13 @@
   }
 }
 
+
 .switch-wrapper {
-  position: relative;
+  /* position: relative; */
 }
 
-.switch-wrapper > div {
-  position: absolute;
+.switch-wrapper>div {
+  /* position: absolute; */
 }
+
+
