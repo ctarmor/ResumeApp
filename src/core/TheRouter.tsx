@@ -1,4 +1,5 @@
-import { Route, Router, Switch } from 'react-router';
+import React from 'react';
+import { Route, Router } from 'react-router';
 import { Home } from '../components/Home';
 import { createBrowserHistory } from "history";
 import { Projects } from '../components/Projects';
@@ -7,7 +8,7 @@ import { AnimatedSwitch } from 'react-router-transition';
 import { TheFooter } from '../components/TheFooter';
 import { TheNavbar } from '../components/TheNavbar';
 import { Col, Container, Row } from 'react-bootstrap';
-import React from 'react';
+import { WebPackages } from '../components/WebPackages';
 
 //
 // https://reactrouter.com/web/example/basic
@@ -38,6 +39,8 @@ export function TheRouter(props: any) {
                         <Route path={'/home'} component={Home} />
                         <Route path={'/projects'} component={Projects} />
                         <Route path={'/technology'} component={Technology} />
+                        <Route path={'/packages'} component={WebPackages} />
+                        
                     </AnimatedSwitch>
                 </Col>
             </Row>

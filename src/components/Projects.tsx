@@ -6,13 +6,7 @@ export class Projects extends React.Component {
 
     render() {
         return (
-            <Container fluid>
-                <Row>
-                    <Col>
-                        Projects
-                    </Col>
-                </Row>
-            </Container>
+            <div className='thepheader'>Projects</div>
         );
     }
 }
