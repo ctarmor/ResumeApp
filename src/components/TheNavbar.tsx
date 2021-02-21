@@ -14,9 +14,9 @@ export class TheNavbar extends React.Component {
                 <Navbar.Toggle aria-controls='basic-navbar-nav' />
                 <Navbar.Collapse id='basic-navbar-nav'>
                     <Nav className='mr-auto'>
-                        <Nav.Link href='/'>Overview</Nav.Link>
+                        <Nav.Link href='/home'>Overview</Nav.Link>
                         <Nav.Link href='/projects'>Projects</Nav.Link>
-                        <Nav.Link href='/edu'>Education</Nav.Link>
+                        <Nav.Link href='/technology'>Technology</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

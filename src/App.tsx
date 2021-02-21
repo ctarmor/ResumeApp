@@ -7,16 +7,20 @@ import { TheRouter } from './core/TheRouter';
 import Row from 'react-bootstrap/esm/Row';
 import { TheNavbar } from './components/TheNavbar';
 
+//
+// https://react-bootstrap.github.io/layout/grid/
+//
+
 function App() {
   return (
     <Container fluid>
       <Row>
-        <Col>
+        <Col lg={12}>
           <TheNavbar />
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col lg={12}>
           <TheRouter />
         </Col>
       </Row>
