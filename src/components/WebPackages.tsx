@@ -6,7 +6,7 @@ export function WebPackages(props: any) {
         <ul>
             {
                 weblinks.map(l => <li>
-                    <a href='{l.link}' target='_new'>{l.desc}</a>
+                    <a href={l.link} target='_new'>{l.link}</a>
                 </li>
                 )
             }
