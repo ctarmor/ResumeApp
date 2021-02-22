@@ -27,8 +27,17 @@ const weblinks = [{
         link: "https://angular.io/"
     },
     {
-        desc: "Functional Components",
+        desc: "React Functional Components",
         link: "https://reactjs.org/docs/components-and-props.html"
+    },
+    {
+        desc: "Icon Finder",
+        link: "https://www.iconfinder.com/search/?q=&price=free"
+
+    },
+    {
+        desc: "Create React App",
+        link: "https://create-react-app.dev/"
     }
 ];
 

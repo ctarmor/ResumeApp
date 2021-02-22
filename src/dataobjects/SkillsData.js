@@ -66,6 +66,7 @@ const SkillsData: [SkillsNm.ISkillsType] = [{
     {
         name: "WPF",
         sinceyr: 2009,
+        iconname: "angular.png",
         type: typeFramework
     },
     {

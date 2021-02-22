@@ -14,7 +14,7 @@ export class Skills extends React.Component {
                 <p>
                     Below find a dynamic list of my most relevant skills.
 
-                    Clock in the heading to sort the columns.
+                    Click the heading to sort the columns.
                 </p>
 
                 <TechList skills={[...SkillsData]} />
