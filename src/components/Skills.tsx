@@ -1,10 +1,9 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
 import { SkillsData } from '../dataobjects/SkillsData';
 import { TechList } from './TechList';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { DeveloperCard } from './DeveloperCard';
+
+
 export class Skills extends React.Component {
 
     render() {
@@ -22,7 +21,7 @@ export class Skills extends React.Component {
 
                 <DeveloperCard
                     title='Manual Table &amp; Local State Hook'
-                    text='Simple implementation of functional components via "hook" local state management. It manually manages sorting and indicators shown in the headers.'
+                    text='Simple implementation of functional components via "hooks" local state management. It manually manages sorting and indicators shown in the headers.'
                     link='https://github.com/ctarmor/ResumeApp/blob/main/src/components/Skills.tsx'
                 />
             </div>

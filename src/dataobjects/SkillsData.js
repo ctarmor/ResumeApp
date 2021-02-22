@@ -137,19 +137,19 @@ const SkillsData: [SkillsNm.ISkillsType] = [{
     },
     {
         name: "Cloud Pipeline",
-        sinceyr: 2019,
+        sinceyr: 2020,
         type: typeCloudAws
     },
     {
         name: "Functions",
-        sinceyr: 2019,
-        lastused: 2017,
+        sinceyr: 2016,
+        lastused: 2018,
         type: typeCloudAzure
     },
     {
         name: "Tables",
-        sinceyr: 2019,
-        lastused: 2017,
+        sinceyr: 2016,
+        lastused: 2018,
         type: typeDatabase
     },
     {

@@ -23,8 +23,12 @@ const weblinks = [{
         link: "https://fontawesome.com/icons?d=gallery"
     },
     {
-        desc: "Angual",
+        desc: "Angular",
         link: "https://angular.io/"
+    },
+    {
+        desc: "Functional Components",
+        link: "https://reactjs.org/docs/components-and-props.html"
     }
 ];
 
