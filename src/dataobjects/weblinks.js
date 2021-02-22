@@ -21,6 +21,10 @@ const weblinks = [{
     {
         desc: "Awesome Font & icons",
         link: "https://fontawesome.com/icons?d=gallery"
+    },
+    {
+        desc: "Angual",
+        link: "https://angular.io/"
     }
 ];
 
