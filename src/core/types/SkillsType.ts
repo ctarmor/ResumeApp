@@ -7,6 +7,10 @@ declare namespace SkillsNm {
         usedat: [string] | undefined,
         sinceyears: number | undefined,
         lastusedyears: number | undefined,
+        sinceyearsno: number | undefined,
+        lastusedyearsno: number | undefined,
+        iconname: string | undefined,
+
     }
 }
 

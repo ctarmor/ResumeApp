@@ -19,7 +19,7 @@ export class TheNavbar extends React.Component {
                         <Nav.Link href='/home'>Overview</Nav.Link>
                         <Nav.Link href='/projects'>Projects</Nav.Link>
                         <Nav.Link href='/skills'>Skills</Nav.Link>
-                        <Nav.Link href='/packages'>React Packages</Nav.Link>
+                        <Nav.Link href='/packages'>Software References</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

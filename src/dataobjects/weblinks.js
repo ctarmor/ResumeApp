@@ -21,6 +21,23 @@ const weblinks = [{
     {
         desc: "Awesome Font & icons",
         link: "https://fontawesome.com/icons?d=gallery"
+    },
+    {
+        desc: "Angular",
+        link: "https://angular.io/"
+    },
+    {
+        desc: "React Functional Components",
+        link: "https://reactjs.org/docs/components-and-props.html"
+    },
+    {
+        desc: "Icon Finder",
+        link: "https://www.iconfinder.com/search/?q=&price=free"
+
+    },
+    {
+        desc: "Create React App",
+        link: "https://create-react-app.dev/"
     }
 ];
 
