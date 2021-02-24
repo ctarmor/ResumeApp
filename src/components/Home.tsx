@@ -5,7 +5,7 @@ export function Home(props: any) {
     return <div>
         <div className='thepheader'>Overview</div>
 
-        <p>Overview</p>
+        <p>Coming Soon!</p>
 
         {/* <Card>
             <Card.Header as="h5">Featured</Card.Header>

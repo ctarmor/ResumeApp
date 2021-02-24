@@ -17,7 +17,7 @@ export function DeveloperCard(props: any) {
                 <Button variant="primary"
                     target='_new'
                     href={props.link}>
-                    <FontAwesomeIcon icon={faGithub} />&nbsp;&nbsp;See Source Code
+                    <FontAwesomeIcon icon={faGithub} />&nbsp;&nbsp;Open Source Code
                 </Button>
             </Card.Footer>
         </Card>

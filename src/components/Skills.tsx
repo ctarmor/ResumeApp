@@ -14,7 +14,7 @@ export class Skills extends React.Component {
                 <p>
                     Below find a dynamic list of my most relevant skills.
 
-                    Click the heading to sort the columns.
+                    Click the heading to sort.
                 </p>
 
                 <TheSkillsTable skills={[...SkillsData]} />
@@ -22,7 +22,7 @@ export class Skills extends React.Component {
                 <DeveloperCard
                     title='Manual Table &amp; Local State Hook'
                     text='Simple implementation of functional components via "hooks" local state management. It manually manages sorting and indicators shown in the headers.'
-                    link='https://github.com/ctarmor/ResumeApp/blob/main/src/components/Skills.tsx'
+                    link='https://github.com/ctarmor/ResumeApp/blob/main/src/components/SkillsTable/TheSkillsTable.tsx'
                 />
             </div>
         );
