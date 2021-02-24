@@ -9,7 +9,7 @@ The application is built using the following packages and patterns:
 
 ### [React-Bootstrap](https://react-bootstrap.github.io/components/alerts/)
 
-### [react Typescript](https://www.typescriptlang.org/docs/handbook/react.html)
+### [React Typescript](https://www.typescriptlang.org/docs/handbook/react.html)
 
 ### [React Redux](https://react-redux.js.org/)
 
@@ -20,6 +20,10 @@ The application is built using the following packages and patterns:
 ### [Awesome Icons](https://fontawesome.com/icons?d=gallery)
 
 ### [Axios](https://www.npmjs.com/package/axios)
+
+### [RxJS](https://rxjs-dev.firebaseapp.com/guide/overview)
+
+
 
 ## Cloudfront AWS App
 
