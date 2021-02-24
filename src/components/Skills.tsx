@@ -1,7 +1,7 @@
 import React from 'react';
 import { SkillsData } from '../dataobjects/SkillsData';
-import { TechList } from './TechList';
 import { DeveloperCard } from './DeveloperCard';
+import { TheSkillsTable } from './SkillsTable/TheSkillsTable';
 
 
 export class Skills extends React.Component {
@@ -17,7 +17,7 @@ export class Skills extends React.Component {
                     Click the heading to sort the columns.
                 </p>
 
-                <TechList skills={[...SkillsData]} />
+                <TheSkillsTable skills={[...SkillsData]} />
 
                 <DeveloperCard
                     title='Manual Table &amp; Local State Hook'
