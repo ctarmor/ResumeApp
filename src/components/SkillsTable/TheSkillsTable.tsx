@@ -9,13 +9,13 @@ import { orderSelectorFn } from './OrderBySelectors';
 //
 // Render a manually manage table for its props skillset collection
 //
-export function TheSkillsTable(props: [SkillsNm.ISkillsType]) {
+export function TheSkillsTable(props: { skills: [SkillsNm.ISkillsType] }) {
 
     // Set functional state hooks
     const [op, setOp] = useState({ orderBy: skillOrderByName, orderAsc: true });
-    const nowYr = new Date().getFullYear();
+    const nowYr : number = new Date().getFullYear();
 
-    // Calculate current years at rendering, and 
+    // Calculate current years at rendering (not optimal for large datasets) 
     const [skills] = useState(props.skills
         .map(s => {
             const lstyr = s.lastused ? (nowYr - s.lastused) : 0;

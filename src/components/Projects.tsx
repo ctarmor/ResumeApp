@@ -6,6 +6,8 @@ export class Projects extends React.Component {
         return (
             <div>
                 <div className='thepheader'>Projects</div>
+
+                <p>Coming Soon!</p>
             </div>
 
         );
