@@ -27,7 +27,7 @@ The application is built using the following packages and patterns:
 
 ## Cloudfront AWS App
 
-The application is hosted by AWS Cloudfront with an S3 static bucket. 
+The application is hosted by AWS Cloudfront within a S3 static bucket. 
 
 ### [Open My Resume](https://d2o2ae3xnbx9l7.cloudfront.net)
 
