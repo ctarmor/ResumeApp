@@ -6,7 +6,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export function DeveloperCard(props: any) {
     return <Card className="text-center">
-            <Card.Header>Developer Reference</Card.Header>
+            <Card.Header as='h5'>Developer Reference</Card.Header>
             <Card.Body className="text-left">
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>
@@ -18,7 +18,7 @@ export function DeveloperCard(props: any) {
                     target='_new'
                     href={props.link}>
                     <FontAwesomeIcon icon={faGithub} />&nbsp;&nbsp;See Source Code
-                        </Button>
+                </Button>
             </Card.Footer>
         </Card>
     ;
