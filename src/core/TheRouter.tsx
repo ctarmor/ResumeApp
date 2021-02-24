@@ -19,7 +19,7 @@ import { WebPackages } from '../components/WebPackages';
 
 const customHistory = createBrowserHistory();
 
-export function TheRouter(props: any) {
+export function TheRouter() {
     return <Router history={customHistory}>
         <Container fluid>
             <Row>

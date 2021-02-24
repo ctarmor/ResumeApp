@@ -1,8 +1,8 @@
 // Type store state.
-interface IStoreState {
+export interface IStoreState {
 
 }
 
-export const state: IStoreState = {
+export const initialState: IStoreState = {
 
 };

@@ -1,14 +1,22 @@
-import { createStore, applyMiddleware } from 'redux';
-import rootReducer from './rootReducer';
+import { applyMiddleware, compose, createStore } from 'redux';
 import thunkMiddleware from 'redux-thunk';
+import { initialState } from './state.tsx';
 
-// https://redux.js.org/tutorials/fundamentals/part-6-async-logic#using-the-redux-thunk-middleware
-// https://redux.js.org/tutorials/fundamentals/part-6-async-logic#redux-async-data-flow
+import monitorReducersEnhancer from './Enhancers/monitorReducerEnhancer';
+import rootReducer from './rootReducer';
 
-// Setup middlewares
-const middlewares = applyMiddleware(thunkMiddleware);
+//
+// Configure Store with middlewares and reducers
+// https://redux.js.org/recipes/configuring-your-store#extending-redux-functionality
+//
+export default function configureStore() {
+  const middlewares = [thunkMiddleware]
+  const middlewareEnhancer = applyMiddleware(...middlewares);
 
-// Creat app store
-const store = createStore(rootReducer, middlewares);
+  const enhancers = [middlewareEnhancer, monitorReducersEnhancer];
+  const composedEnhancers = compose(...enhancers);
 
-export default store; 
+  const store = createStore(rootReducer, initialState, composedEnhancers);
+
+  return store;
+}
