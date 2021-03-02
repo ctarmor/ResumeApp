@@ -1,3 +1,5 @@
-declare namespace JobsDetailsType {
-    
+declare namespace JobsDetailsNm {
+    interface ISkillsType {
+        
+    }
 }

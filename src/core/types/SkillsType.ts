@@ -10,7 +10,6 @@ declare namespace SkillsNm {
         sinceyearsno: number | undefined,
         lastusedyearsno: number | undefined,
         iconname: string | undefined,
-
     }
 }
 
