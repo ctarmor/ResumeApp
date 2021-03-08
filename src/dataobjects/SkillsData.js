@@ -186,6 +186,11 @@ const SkillsData: [SkillsNm.ISkillsType] = [{
         lastused: 2018,
         type: typeSoftware
     },
+    {
+        name: "NodeJs",
+        sinceyr: 2020,
+        type: typeFramework
+    },
 ];
 
 module.exports = {
